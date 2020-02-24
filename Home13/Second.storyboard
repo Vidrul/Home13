@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="adI-tT-Z7d">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="u78-Fk-V24">
+            <objects>
+                <viewController storyboardIdentifier="Second" id="adI-tT-Z7d" customClass="SecondViewController" customModule="Home13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wIX-7J-KQx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJA-Xc-g0d">
+                                <rect key="frame" x="20" y="832" width="187" height="30"/>
+                                <state key="normal" title="Left"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pK-iE-juB">
+                                <rect key="frame" x="207" y="832" width="187" height="30"/>
+                                <state key="normal" title="Right"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q4o-IO-7yG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="q4o-IO-7yG" firstAttribute="leading" secondItem="PmB-m3-PZq" secondAttribute="leading" id="Hvy-Li-VNL"/>
+                            <constraint firstItem="PmB-m3-PZq" firstAttribute="trailing" secondItem="1pK-iE-juB" secondAttribute="trailing" constant="20" id="Qrf-7m-aNq"/>
+                            <constraint firstItem="q4o-IO-7yG" firstAttribute="height" secondItem="wIX-7J-KQx" secondAttribute="height" multiplier="0.5" id="Ts0-sf-liR"/>
+                            <constraint firstItem="q4o-IO-7yG" firstAttribute="width" secondItem="wIX-7J-KQx" secondAttribute="width" id="W8l-zw-J2f"/>
+                            <constraint firstItem="q4o-IO-7yG" firstAttribute="top" secondItem="PmB-m3-PZq" secondAttribute="top" id="XIf-tl-yyG"/>
+                            <constraint firstItem="rJA-Xc-g0d" firstAttribute="leading" secondItem="PmB-m3-PZq" secondAttribute="leading" constant="20" id="dgo-HQ-qib"/>
+                            <constraint firstItem="1pK-iE-juB" firstAttribute="bottom" secondItem="PmB-m3-PZq" secondAttribute="bottom" id="g0O-jg-Pfw"/>
+                            <constraint firstItem="rJA-Xc-g0d" firstAttribute="bottom" secondItem="PmB-m3-PZq" secondAttribute="bottom" id="gji-4H-Xq9"/>
+                            <constraint firstItem="rJA-Xc-g0d" firstAttribute="width" secondItem="1pK-iE-juB" secondAttribute="width" id="jT6-D0-Cnd"/>
+                            <constraint firstItem="1pK-iE-juB" firstAttribute="leading" secondItem="rJA-Xc-g0d" secondAttribute="trailing" id="o3I-X4-bXW"/>
+                            <constraint firstItem="PmB-m3-PZq" firstAttribute="trailing" secondItem="q4o-IO-7yG" secondAttribute="trailing" id="xJ3-YE-o3s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PmB-m3-PZq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9x-3e-FWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+</document>
