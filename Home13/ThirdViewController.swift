@@ -9,11 +9,14 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var thirdBlackView: UIView!
     
     var duration: Double = 2.0
+    let leadingMargin: CGFloat = 20.0
+    var state: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
+    
     
     @IBAction func firstBlackViewDidClick(_ sender: Any) {
         animatedSomeOne(BlackView: firstBlackView)
@@ -34,21 +37,18 @@ class ThirdViewController: UIViewController {
 extension ThirdViewController {
     func animatedSomeOne (BlackView: UIView) {
         UIView.animate(withDuration: self.duration, animations: {
-            self.moveDown(view: BlackView)
-        }) { (finished) in
-            if finished  {
-                UIView.animate(withDuration: self.duration) {
-                    self.moveUp(view: BlackView)
-                }
-            }
+            self.moveDown(myView: BlackView)
+        })
+    }
+    
+    func moveDown (myView: UIView) {
+        state = !state
+        if state {
+            let x = view.frame.size.height - leadingMargin - myView.frame.height
+            myView.frame.origin.y = x
+        } else {
+            myView.frame.origin.y = 40
         }
-    }
-    
-    func moveDown (view: UIView) {
-        view.center.y += 748
-    }
-    
-    func moveUp (view: UIView) {
-        view.center.y -= 748
+        
     }
 }
